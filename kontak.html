@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak Saya</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #eef3ff, #ffffff);
+      color: #333;
+    }
+
+    header {
+      background: #4a6cf7;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+     nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 15px;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      animation: fadeDown 1.2s ease-in-out;
+    }
+    nav a {
+      text-decoration: none;
+      color: #4a6cf7;
+      font-weight: bold;
+      transition: 0.3s;
+      font-size: 16px;
+    }
+    nav a:hover {
+      color: #1f3cd1;
+      transform: translateY(-3px);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .contact-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #4a6cf7;
+    }
+
+    .info p {
+      margin: 8px 0;
+      font-size: 16px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      font-weight: 600;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+      resize: none;
+    }
+
+    button {
+      background: #4a6cf7;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #3c59d0;
+    }
+
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-size: 16px;
+    }
+
+    .social-links a {
+      text-decoration: none;
+      color: #4a6cf7;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #2f45a0;
+    }
+
+    @media (max-width: 768px) {
+      .contact-section {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+    <nav>
+    <a href="index.html">Beranda</a>
+    <a href="tentangSaya.html">Tentang Saya</a>
+    <a href="tugas.html">Tugas</a>
+    <a href="webpkl.html">Pengalaman PKL</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+
+  <header>Kontak Saya</header>
+
+  <div class="container">
+    <div class="contact-section">
+
+      <!-- Informasi Kontak -->
+      <div class="card info">
+        <h2>Informasi Kontak</h2>
+        <p><strong>Nama:</strong> Muhammad Irsani</p>
+        <p><strong>Email:</strong> muhammadirsani617@gmail.com</p>
+        <p><strong>WhatsApp:</strong> 081522709615</p>
+        <p><strong>Alamat:</strong> Kota samarinda</p>
+
+        <h3>Media Sosial</h3>
+        <div class="social-links">
+          <a href="#">📸 Instagram</a>
+          <a href="#">📘 Facebook</a>
+          <a href="#">🎵 TikTok</a>
+          <a href="#">💻 GitHub</a>
+        </div>
+      </div>
+
+      <!-- Form Kontak Interaktif -->
+      <div class="card">
+        <h2>Kirim Pesan</h2>
+        <form id="contactForm">
+          <div class="form-group">
+            <label>Nama Lengkap:</label>
+            <input type="text" required>
+          </div>
+          <div class="form-group">
+            <label>Email:</label>
+            <input type="email" required>
+          </div>
+          <div class="form-group">
+            <label>Pesan:</label>
+            <textarea rows="5" required></textarea>
+          </div>
+          <button type="submit">Kirim</button>
+        </form>
+        <p id="responseMessage" style="margin-top: 15px; font-weight: 600; color: green; display: none;">Pesan berhasil dikirim!</p>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      document.getElementById("responseMessage").style.display = "block";
+      setTimeout(() => {
+        document.getElementById("responseMessage").style.display = "none";
+      }, 3000);
+      this.reset();
+    });
+  </script>
+</body>
+</html>

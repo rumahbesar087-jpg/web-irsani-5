@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Latihan Soal TLJ - Soal & Jawaban</title>
+  <style>
+    :root{--bg:#f7fbff;--card:#fff;--accent:#3b82f6;--muted:#6b7280}
+    body{font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial; margin:0; background:linear-gradient(180deg,var(--bg),#ffffff); color:#111}
+    header{background:linear-gradient(90deg,var(--accent),#6366f1); color:white; padding:28px 20px}
+    .container{max-width:980px;margin:24px auto;padding:0 18px}
+    h1{margin:0;font-size:22px}
+    p.lead{margin:6px 0 0;opacity:.95}
+    .card{background:var(--card);border-radius:12px;padding:18px;margin:18px 0;box-shadow:0 6px 20px rgba(15,23,42,0.06)}
+    .q{display:flex;gap:12px;align-items:flex-start}
+    .qnum{min-width:40px; font-weight:700; color:var(--accent)}
+    .qtext{flex:1}
+    .answers{margin-top:8px}
+    .ans{padding:8px 10px;border-radius:8px;background:#f3f4f6;border:1px solid #eef2ff;display:inline-block;margin-right:8px;margin-bottom:8px}
+    .ans.correct{background:#ecfdf5;border-color:#bbf7d0}
+    .note{color:var(--muted);font-size:13px;margin-top:6px}
+    .controls{display:flex;gap:8px;justify-content:flex-end}
+    .btn{background:var(--accent);color:#fff;padding:10px 12px;border-radius:8px;border:0;cursor:pointer}
+    .btn.ghost{background:transparent;color:var(--accent);border:1px solid rgba(255,255,255,0.18)}
+    footer{max-width:980px;margin:36px auto 80px;padding:0 18px;color:var(--muted);font-size:13px}
+    pre{white-space:pre-wrap;background:#0f172a;color:#fff;padding:12px;border-radius:8px;overflow:auto}
+    .uncertain{background:#fff7ed;border-color:#ffedd5}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Latihan Soal TLJ — Soal & Jawaban</h1>
+      <p class="lead">Halaman berisi soal pilihan ganda yang Anda unggah, beserta jawaban (jawaban berisikan estimasi pada beberapa item yang tidak tercantum dengan jelas).</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <h2>Petunjuk</h2>
+      <p class="note">Klik tombol "Unduh HTML" untuk menyimpan halaman ini sebagai file .html. Beberapa jawaban diberi tanda <strong>(diperkirakan)</strong> jika soal mengacu pada konfigurasi spesifik yang tidak tersedia di file.</p>
+      <div class="controls" style="margin-top:12px">
+        <button class="btn" onclick="downloadFile()">Unduh HTML</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Bagian A — Pilihan Ganda</h2>
+
+      <!-- Questions list -->
+      <div id="questions">
+
+        <!-- We'll render each question as markup -->
+
+        <div class="q">
+          <div class="qnum">1</div>
+          <div class="qtext">Manakah pernyataan berikut yang benar mengenai kelebihan soft switch?
+            <div class="answers">
+              <span class="ans">a. Bergantung pada perangkat keras khusus</span>
+              <span class="ans correct">b. Mudah diintegrasikan dengan perangkat keras</span>
+              <span class="ans">c. Membutuhkan pemeliharaan fisik yang intensif</span>
+              <span class="ans">d. Tidak fleksibel dalam penanganan panggilan</span>
+              <span class="ans">e. Memerlukan lisensi berbayar mahal</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="q">
+          <div class="qnum">2</div>
+          <div class="qtext">Fungsi utama dari Firewall VoIP adalah…
+            <div class="answers">
+              <span class="ans">a. Mencegah serangan ransomware</span>
+              <span class="ans">b. Melindungi data pengguna</span>
+              <span class="ans correct">c. Mengontrol dan memonitor lalu lintas VoIP</span>
+              <span class="ans">d. Meningkatkan kecepatan internet</span>
+              <span class="ans">e. Mengatur prioritas bandwidth</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="q">
+          <div class="qnum">3</div>
+          <div class="qtext">Risiko utama jika Firewall VoIP tidak dikonfigurasi dengan benar adalah…
+            <div class="answers">
+              <span class="ans">a. Penurunan kecepatan internet</span>
+              <span class="ans correct">b. Potensi kebocoran data dan akses tidak sah</span>
+              <span class="ans">c. Kehilangan sinyal seluler</span>
+              <span class="ans">d. Penurunan kualitas suara</span>
+              <span class="ans">e. Bandwidth berkurang</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="q">
+          <div class="qnum">4</div>
+          <div class="qtext">Fungsi utama dari Trixbox dalam lingkungan server VoIP adalah…
+            <div class="answers">
+              <span class="ans">a. Mengelola database</span>
+              <span class="ans">b. Menyediakan layanan email</span>
+              <span class="ans correct">c. Menyediakan layanan VoIP</span>
+              <span class="ans">d. Mengelola file server</span>
+              <span class="ans">e. Menyediakan server DNS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="q"><div class="qnum">5</div><div class="qtext">Soft switch biasanya digunakan dalam lingkungan…
+            <div class="answers">
+              <span class="ans">a. Rumah tangga</span>
+              <span class="ans correct">b. Perusahaan besar</span>
+              <span class="ans">c. Hanya laboratorium riset</span>
+              <span class="ans">d. Sektor pemerintah saja</span>
+              <span class="ans">e. Komunikasi radio</span>
+            </div>
+          </div></div>
+
+        <div class="q"><div class="qnum">6</div><div class="qtext">Peran Softswitch dalam implementasi VoIP adalah…
+            <div class="answers">
+              <span class="ans">a. Memantau lalu lintas internet</span>
+              <span class="ans correct">b. Mengelola panggilan suara melalui jaringan IP</span>
+              <span class="ans">c. Mencegah serangan siber</span>
+              <span class="ans">d. Menyediakan layanan email</span>
+              <span class="ans">e. Mengatur hak akses pengguna</span>
+            </div>
+          </div></div>
+
+        <div class="q"><div class="qnum">7</div><div class="qtext">Bagaimana firewall VoIP melindungi dari phishing suara?
+            <div class="answers">
+              <span class="ans">a. Memblokir seluruh panggilan</span>
+              <span class="ans">b. Menyaring email masuk</span>
+              <span class="ans correct">c. Mendeteksi dan mencegah panggilan palsu</span>
+              <span class="ans">d. Memblokir nomor tidak dikenal</span>
+              <span class="ans">e. Menghapus pesan suara otomatis</span>
+            </div>
+          </div></div>
+
+        <div class="q"><div class="qnum">8</div><div class="qtext">Keuntungan utama menggunakan Trixbox dibanding PBX konvensional adalah…
+            <div class="answers">
+              <span class="ans correct">a. Lebih murah</span>
+              <span class="ans">b. Lebih aman</span>
+              <span class="ans">c. Lebih lambat</span>
+              <span class="ans">d. Lebih rumit</span>
+              <span class="ans">e. Membutuhkan perangkat mahal</span>
+            </div>
+          </div></div>
+
+        <div class="q"><div class="qnum">9</div><div class="qtext">Kelebihan yang membuat soft switch umum digunakan adalah…
+            <div class="answers">
+              <span class="ans">a. Dapat beroperasi tanpa internet</span>
+              <span class="ans">b. Fleksibilitas dalam penyesuaian panggilan</span>
+              <span class="ans correct">c. Efisiensi biaya & manajemen panggilan</span>
+              <span class="ans">d. Meningkatkan kualitas layanan seluler</span>
+              <span class="ans">e. Mengurangi sinyal jaringan</span>
+            </div>
+          </div></div>
+
+        <div class="q"><div class="qnum">10</div><div class="qtext">Apa yang dimaksud dengan Trixbox?
+            <div class="answers">
+              <span class="ans">a. Sistem operasi open-source</span>
+              <span class="ans">b. Perangkat keras komunikasi</span>
+              <span class="ans correct">c. Platform telepon IP berbasis software</span>
+              <span class="ans">d. Aplikasi manajemen database</span>
+              <span class="ans">e. Sistem keamanan jaringan</span>
+            </div>
+          </div></div>
+
+        <div class="q"><div class="qnum">11</div><div class="qtext">Risiko keamanan VoIP tanpa firewall adalah…
+            <div class="answers">
+              <span class="ans">a. Pencurian sinyal WiFi</span>
+              <span class="ans">b. Panggilan suara yang tidak diinginkan</span>
+              <span class="ans correct">c. Pencurian data dan akses tidak sah</span>
+              <span class="ans">d. Gangguan kualitas suara</span>
+              <span class="ans">e. Jaringan menjadi lambat</span>
+            </div>
+          </div></div>
+
+        <div class="q"><div class="qnum">12</div><div class="qtext">Manfaat utama implementasi soft switch adalah…
+            <div class="answers">
+              <span class="ans">a. Membatasi jumlah panggilan</span>
+              <span class="ans">b. Menyaring pesan teks</span>
+              <span class="ans">c. Menyediakan sinyal analog</span>
+              <span class="ans correct">d. Menyederhanakan infrastruktur PBX</span>
+              <span class="ans">e. Mematikan layanan VoIP</span>
+            </div>
+          </div></div>
+
+        <div class="q"><div class="qnum">13</div><div class="qtext">Risiko VoIP tanpa proteksi firewall adalah…
+            <div class="answers">
+              <span class="ans">a. Penurunan kualitas suara</span>
+              <span class="ans correct">b. Kemungkinan serangan terhadap sistem VoIP</span>
+              <span class="ans">c. Penurunan kecepatan internet</span>
+              <span class="ans">d. Peningkatan pesan teks spam</span>
+              <span class="ans">e. Internet menjadi instabil</span>
+            </div>
+          </div></div>
+
+        <div class="q"><div class="qnum">14</div><div class="qtext">Manfaat utama soft switch adalah…
+            <div class="answers">
+              <span class="ans">a. Kecepatan transfer data tinggi</span>
+              <span class="ans correct">b. Skalabilitas dan fleksibilitas</span>
+              <span class="ans">c. Ketergantungan pada perangkat keras</span>
+              <span class="ans">d. Isolasi jaringan</span>
+              <span class="ans">e. Memperkuat sinyal radio</span>
+            </div>
+          </div></div>
+
+        <div class="q"><div class="qnum">15</div><div class="qtext">Bagaimana Trixbox membantu perusahaan dalam mengelola panggilan?
+            <div class="answers">
+              <span class="ans">a. Mengurangi pegawai operator</span>
+              <span class="ans correct">b. Mengoptimalkan pembagian panggilan</span>
+              <span class="ans">c. Menghapus jalur komunikasi</span>
+              <span class="ans">d. Memutus koneksi otomatis</span>
+              <span class="ans">e. Mengatur email masuk</span>
+            </div>
+          </div></div>
+
+        <div class="q"><div class="qnum">16</div><div class="qtext">Kurang fleksibel merupakan kekurangan dari…
+            <div class="answers">
+              <span class="ans correct">a. Traditional PBX</span>
+              <span class="ans">b. IP PBX</span>
+              <span class="ans">c. Hosted PBX</span>
+              <span class="ans">d. Virtual PBX</span>
+              <span class="ans">e. Hybrid PBX</span>
+            </div>
+          </div></div>
+
+        <div class="q"><div class="qnum">17</div><div class="qtext">PBX yang memerlukan instalasi dan pemeliharaan intensif adalah…
+            <div class="answers">
+              <span class="ans correct">a. Traditional PBX</span>
+              <span class="ans">b. IP PBX</span>
+              <span class="ans">c. Hosted PBX</span>
+              <span class="ans">d. Virtual PBX</span>
+              <span class="ans">e. Hybrid PBX</span>
+            </div>
+          </div></div>
+
+        <div class="q"><div class="qnum">18</div><div class="qtext">PBX yang menggunakan protokol IP untuk mengirimkan suara adalah…
+            <div class="answers">
+              <span class="ans">a. Traditional PBX</span>
+              <span class="ans correct">b. IP PBX</span>
+              <span class="ans">c. Hosted PBX</span>
+              <span class="ans">d. Virtual PBX</span>
+              <span class="ans">e. Hybrid PBX</span>
+            </div>
+          </div></div>
+
+        <div class="q"><div class="qnum">19</div><div class="qtext">PBX yang memerlukan instalasi & pemeliharaan intensif adalah…
+            <div class="answers">
+              <span class="ans correct">a. Traditional PBX</span>
+              <span class="ans">b. IP PBX</span>
+              <span class="ans">c. Hosted PBX</span>
+              <span class="ans">d. Virtual PBX</span>
+              <span class="ans">e. Hybrid PBX</span>
+            </div>
+          </div></div>
+
+        <div class="q"><div class="qnum">20</div><div class="qtext">VoIP PBX juga dikenal dengan nama…
+            <div class="answers">
+              <span class="ans">a. Traditional PBX</span>
+              <span class="ans correct">b. IP PBX</span>
+              <span class="ans">c. Hosted PBX</span>
+              <span class="ans">d. Virtual PBX</span>
+              <span class="ans">e. Hybrid PBX</span>
+            </div>
+          </div></div>
+
+        <div class="q"><div class="qnum">21</div><div class="qtext">PBX yang lebih hemat biaya karena memakai infrastruktur yang sudah ada…
+            <div class="answers">
+              <span class="ans">a. Traditional PBX</span>
+              <span class="ans correct">b. IP PBX</span>
+              <span class="ans">c. Hosted PBX</span>
+              <span class="ans">d. Virtual PBX</span>
+              <span class="ans">e. Hybrid PBX</span>
+            </div>
+          </div></div>
+
+        <div class="q"><div class="qnum">22</div><div class="qtext">Cloud PBX juga dikenal dengan nama…
+            <div class="answers">
+              <span class="ans">a. Traditional PBX</span>
+              <span class="ans">b. IP PBX</span>
+              <span class="ans correct">c. Hosted PBX</span>
+              <span class="ans">d. Virtual PBX</span>
+              <span class="ans">e. Hybrid PBX</span>
+            </div>
+          </div></div>
+
+        <div class="q"><div class="qnum">23</div><div class="qtext">PBX yang cocok untuk bisnis kecil–menengah tanpa biaya awal besar…
+            <div class="answers">
+              <span class="ans">a. Traditional PBX</span>
+              <span class="ans">b. IP PBX</span>
+              <span class="ans correct">c. Hosted PBX</span>
+              <span class="ans">d. Virtual PBX</span>
+              <span class="ans">e. Hybrid PBX</span>
+            </div>
+          </div></div>
+
+        <div class="q"><div class="qnum">24</div><div class="qtext">PBX yang tidak memerlukan perangkat keras fisik lagi adalah…
+            <div class="answers">
+              <span class="ans">a. Traditional PBX</span>
+              <span class="ans">b. IP PBX</span>
+              <span class="ans">c. Hosted PBX</span>
+              <span class="ans correct">d. Virtual PBX</span>
+              <span class="ans">e. Hybrid PBX</span>
+            </div>
+          </div></div>
+
+        <div class="q"><div class="qnum">25</div><div class="qtext">Dengan VoIP, biaya lebih … untuk sambungan langsung jarak jauh.
+            <div class="answers">
+              <span class="ans">a. on</span>
+              <span class="ans">b. of</span>
+              <span class="ans correct uncertain">c. over <span style="font-weight:600">(diperkirakan)</span></span>
+              <span class="ans">d. or</span>
+              <span class="ans">e. off</span>
+            </div>
+            <div class="note">Catatan: soal ini pada sumber aslinya tampak memiliki pilihan kata-kata singkat — jawaban diperkirakan mengisi kata "over" sebagai bagian dari frasa "Voice over IP" atau konteks kalimat.</div>
+          </div></div>
+
+        <div class="q"><div class="qnum">26</div><div class="qtext">Generasi lanjutan VoIP adalah…
+            <div class="answers">
+              <span class="ans">a. GSM</span>
+              <span class="ans">b. CDMA</span>
+              <span class="ans">c. 3G</span>
+              <span class="ans correct">d. NGN</span>
+              <span class="ans">e. 2G</span>
+            </div>
+          </div></div>
+
+        <div class="q"><div class="qnum">27</div><div class="qtext">VoIP adalah Voice … Internet Protocol.
+            <div class="answers">
+              <span class="ans">a. asterisk</span>
+              <span class="ans">b. real time</span>
+              <span class="ans">c. PBX</span>
+              <span class="ans">d. SIP</span>
+              <span class="ans uncertain correct">e. data digital <span style="font-weight:600">(diperkirakan)</span></span>
+            </div>
+            <div class="note">Catatan: secara teknis frasa yang benar adalah "Voice <strong>over</strong> Internet Protocol". Karena pilihan jawaban yang tersedia pada file tidak menyertakan kata "over", saya menandai jawaban ini sebagai <em>diperkirakan</em>. Jika Anda menginginkan perbaikan, saya bisa sesuaikan setelah Anda konfirmasi.</div>
+          </div></div>
+
+        <div class="q"><div class="qnum">28</div><div class="qtext">Kualitas suara VoIP menurun karena…
+            <div class="answers">
+              <span class="ans">a. mahal</span>
+              <span class="ans correct">b. rendah</span>
+              <span class="ans">c. baik</span>
+              <span class="ans">d. bagus</span>
+              <span class="ans">e. tinggi</span>
+            </div>
+          </div></div>
+
+        <div class="q"><div class="qnum">29</div><div class="qtext">Teknik kompresi membuat suara hanya butuh sekitar … kbps.
+            <div class="answers">
+              <span class="ans correct">a. 8</span>
+              <span class="ans">b. 16</span>
+              <span class="ans">c. 32</span>
+              <span class="ans">d. 64</span>
+              <span class="ans">e. 128</span>
+            </div>
+            <div class="note">(Contoh: codec G.729 membutuhkan sekitar 8 kbps setelah kompresi.)</div>
+          </div></div>
+
+        <div class="q"><div class="qnum">30</div><div class="qtext">Dengan adanya … jaringan VoIP bisa disambungkan ke PABX kantor.
+            <div class="answers">
+              <span class="ans">a. DNS</span>
+              <span class="ans">b. DHCP</span>
+              <span class="ans">c. FTP</span>
+              <span class="ans correct">d. gateway</span>
+              <span class="ans">e. PBX</span>
+            </div>
+          </div></div>
+
+        <div class="q"><div class="qnum">31</div><div class="qtext">Kualitas suara VoIP tidak sejernih … karena bandwidth kecil.
+            <div class="answers">
+              <span class="ans correct">a. kompresi suara</span>
+              <span class="ans">b. congestion</span>
+              <span class="ans">c. data yang besar</span>
+              <span class="ans">d. sip</span>
+              <span class="ans">e. PABX</span>
+            </div>
+          </div></div>
+
+        <div class="q"><div class="qnum">32</div><div class="qtext">Asterisk adalah software … yang berjalan di Linux.
+            <div class="answers">
+              <span class="ans correct">a. open source</span>
+              <span class="ans">b. demo</span>
+              <span class="ans">c. close source</span>
+              <span class="ans">d. berbayar</span>
+              <span class="ans">e. sewa</span>
+            </div>
+          </div></div>
+
+        <div class="q"><div class="qnum">33</div><div class="qtext">Instalasi paket Asterisk membutuhkan keping DVD ke….
+            <div class="answers">
+              <span class="ans correct">a. 1</span>
+              <span class="ans">b. 2</span>
+              <span class="ans">c. 1 & 2</span>
+              <span class="ans">d. 2 & 3</span>
+              <span class="ans">e. 1 & 3</span>
+            </div>
+          </div></div>
+
+        <div class="q"><div class="qnum">34</div><div class="qtext">Perintah untuk menginstal Asterisk adalah apt-get …. asterisk
+            <div class="answers">
+              <span class="ans">a. remove</span>
+              <span class="ans">b. purge</span>
+              <span class="ans">c. clean</span>
+              <span class="ans">d. autoremove</span>
+              <span class="ans correct">e. install</span>
+            </div>
+          </div></div>
+
+        <div class="q"><div class="qnum">35</div><div class="qtext">Nomor telepon tkj1 adalah…
+            <div class="answers">
+              <span class="ans correct uncertain">a. 124 <span style="font-weight:600">(diperkirakan)</span></span>
+              <span class="ans">b. 123</span>
+              <span class="ans">c. 125</span>
+              <span class="ans">d. 126</span>
+              <span class="ans">e. 127</span>
+            </div>
+            <div class="note">Catatan: soal ini mengacu pada contoh konfigurasi yang tidak ada dalam file; jawaban diberi tanda "diperkirakan".</div>
+          </div></div>
+
+        <div class="q"><div class="qnum">36</div><div class="qtext">Nomor telepon tkj2 adalah…
+            <div class="answers">
+              <span class="ans">a. 124</span>
+              <span class="ans correct uncertain">b. 123 <span style="font-weight:600">(diperkirakan)</span></span>
+              <span class="ans">c. 125</span>
+              <span class="ans">d. 126</span>
+              <span class="ans">e. 127</span>
+            </div>
+          </div></div>
+
+        <div class="q"><div class="qnum">37</div><div class="qtext">Parameter yang menunjukkan kata sandi adalah…
+            <div class="answers">
+              <span class="ans correct">a. secret</span>
+              <span class="ans">b. smkdt1</span>
+              <span class="ans">c. smkdt2</span>
+              <span class="ans">d. tkj1</span>
+              <span class="ans">e. tkj2</span>
+            </div>
+          </div></div>
+
+        <div class="q"><div class="qnum">38</div><div class="qtext">Kata sandi untuk tkj1 adalah…
+            <div class="answers">
+              <span class="ans">a. 124</span>
+              <span class="ans correct uncertain">b. tkj1 <span style="font-weight:600">(diperkirakan)</span></span>
+              <span class="ans">c. tkj2</span>
+              <span class="ans">d. smkdt1</span>
+              <span class="ans">e. smkdt2</span>
+            </div>
+            <div class="note">(Diperkirakan berdasarkan konvensi penamaan; sesuaikan jika Anda punya file konfigurasi.)</div>
+          </div></div>
+
+        <div class="q"><div class="qnum">39</div><div class="qtext">Kata sandi untuk tkj2 adalah…
+            <div class="answers">
+              <span class="ans correct uncertain">a. 123 <span style="font-weight:600">(diperkirakan)</span></span>
+              <span class="ans">b. 124</span>
+              <span class="ans">c. 125</span>
+              <span class="ans">d. smkdt1</span>
+              <span class="ans">e. smkdt2</span>
+            </div>
+          </div></div>
+
+        <div class="q"><div class="qnum">40</div><div class="qtext">Jika PC memiliki webcam, maka user bisa melakukan…
+            <div class="answers">
+              <span class="ans">a. chat</span>
+              <span class="ans">b. call</span>
+              <span class="ans">c. chat call</span>
+              <span class="ans correct">d. video call</span>
+              <span class="ans">e. foto selfie</span>
+            </div>
+          </div></div>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+      <h2>Bagian B — Essay</h2>
+      <p class="note">(Bagian essay pada file asli belum diisi di sini — Anda dapat meminta agar saya lengkapi jawaban essay secara otomatis; saya bisa membuat jawaban ringkas/komprehensif untuk tiap soal essay jika Anda mau.)</p>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="container">Halaman ini dibuat otomatis. Beberapa jawaban diberi label <em>diperkirakan</em> karena soal mengacu pada nilai/konfigurasi yang tidak tersedia di file sumber. Jika Anda ingin saya sesuaikan jawaban konfigurasi (nomor telepon, password, dll.), silakan unggah file konfigurasi atau beri tahu nilai yang benar — saya akan perbarui langsung.</div>
+  </footer>
+
+<script>
+function downloadFile(){
+  const html = `<!doctype html>\n` + document.documentElement.innerHTML;
+  const blob = new Blob([html], {type: 'text/html'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'Latihan_Soal_TLJ_soal_dan_jawaban.html';
+  document.body.appendChild(a); a.click(); a.remove();
+  URL.revokeObjectURL(url);
+}
+</script>
+
+</body>
+</html>

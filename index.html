@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil Siswa Interaktif</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #e3ebff, #ffffff);
+      overflow-x: hidden;
+    }
+
+    /* --- HEADER --- */
+   header {
+  background-image: url("icegif-723.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  animation: fadeDown 1s ease-in-out;
+  position: relative;
+  min-height: 100px;
+}
+
+/* Overlay agar teks tetap jelas */
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+
+/* Pastikan teks tidak tertutup overlay */
+header h1, header p {
+  position: relative;
+  z-index: 1;
+}
+
+
+    header h1, header p {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+    }
+
+    header h1 {
+      font-size: 38px;
+      letter-spacing: 1px;
+    }
+
+    /* --- NAVBAR BARU --- */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 15px;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      animation: fadeDown 1.2s ease-in-out;
+    }
+    nav a {
+      text-decoration: none;
+      color: #4a6cf7;
+      font-weight: bold;
+      transition: 0.3s;
+      font-size: 16px;
+    }
+    nav a:hover {
+      color: #1f3cd1;
+      transform: translateY(-3px);
+    }
+
+    /* --- CONTAINER --- */
+    .container {
+      max-width: 1000px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      animation: fadeUp 1s ease-in-out;
+    }
+
+    /* --- PROFILE --- */
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .profile img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #4a6cf7;
+      transition: 0.4s;
+    }
+
+    .profile img:hover {
+      transform: scale(1.1) rotate(3deg);
+    }
+
+    .profile h2 {
+      margin: 0;
+      font-size: 30px;
+      color: #333;
+    }
+
+    /* --- ANIMATION --- */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      margin-top: 60px;
+      background: #4a6cf7;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: fadeUp 1.5s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Profil Siswa</h1>
+    <p>Website Portofolio & Dokumentasi</p>
+  </header>
+  <audio src="original.mp3" autoplay loop></audio>
+
+  <!-- NAVBAR BARU -->
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="tentangSaya.html">Tentang Saya</a>
+    <a href="tugas.html">Tugas</a>
+    <a href="webpkl.html">Pengalaman PKL</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+
+  <!-- BERANDA / PROFIL -->
+  <div class="container" id="beranda">
+    <div class="profile">
+      <img src="/WhatsApp Image 2025-10-23 at 11.58.31.jpg" alt="Foto Siswa">
+      <div>
+        <h2>Muhammad Irsani</h2>
+        <p>Kelas: XII Rekayasa Perangkat Lunak</p>
+        <p>Email: muhammadirsani617@gmail.com</p>
+        <p>Deskripsi: Siswa aktif dalam kegiatan praktek ASJ dan pengembangan software.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2024 Profil Siswa — Dibuat untuk dokumentasi & tugas sekolah</p>
+  </footer>
+
+</body>
+</html>

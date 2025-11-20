@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daftar Tugas - Blog Pribadi</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: #f0f4ff;
+    }
+
+    header {
+    font-size: 40px;
+  background-image: url("icegif-723.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  animation: fadeDown 1s ease-in-out;
+  position: relative;
+  min-height: 100px;
+}
+
+/* Overlay agar teks tetap jelas */
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+
+/* Pastikan teks tidak tertutup overlay */
+header h1, header p {
+  position: relative;
+  z-index: 1;
+}
+
+
+    header h1, header p {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+    }
+
+    header h1 {
+      font-size: 38px;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 15px;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      text-decoration: none;
+      color: #4a6cf7;
+      font-weight: bold;
+      transition: 0.3s;
+      font-size: 16px;
+    }
+    nav a:hover {
+      color: #1f3cd1;
+      transform: translateY(-3px);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+
+    .task-item {
+      background: #eef2ff;
+      border-left: 6px solid #4a6cf7;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .task-item h3 {
+      margin: 0;
+      color: #2c3e50;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="tentangSaya.html">Tentang Saya</a>
+    <a href="tugas.html">Tugas</a>
+    <a href="webpkl.html">Pengalaman PKL</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+
+  <header>Daftar Tugas</header>
+
+  <div class="container">
+    <h2>Tugas yang Harus Dikumpulkan</h2>
+
+    <!-- Kamu tinggal menambahkan tugas di sini -->
+    <div class="task-item">
+      <h3>Tugas 1: Tugas ASJ 2025</h3>
+      <p>Mata Pelajaran: ASJK</p>
+      <p>Deadline: 60 menit</p>
+      <a href="tugasASJ.html">web tugas ASJ</a>
+    </div>
+
+    <div class="task-item">
+      <h3>Tugas 2: tugas AIJ</h3>
+      <p>Mata Pelajaran: TLJ</p>
+      <p>Deadline: 60 menit</p>
+      <a href="tugasAIJ.html">web tugas AIJ</a>
+    </div>
+
+    <div class="task-item">
+      <h3>Tugas 3: tugas TLJ</h3>
+      <p>Mata Pelajaran: TLJ</p>
+      <p>Deadline: 60 menit </p>
+      <a href="tugasTLJ.html">web tugas TLJ</a>
+    </div>
+
+  </div>
+
+  <footer>Website Pengumpulan Tugas © 2025</footer>
+</body>
+</html>
